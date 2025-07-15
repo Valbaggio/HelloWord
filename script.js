@@ -1,9 +1,16 @@
 function inserirNome (){
-    let nomeUsuario = prompt ("Qual o seu nome?");
-    let elemento = document.querySelector ("#nome-usuario");
-    elemento.textContent = nomeUsuario;
+   let nomeUsuário = "";
+let elemento = document.querySelector("#nome-usuário");
+
+while (nomeUsuário == ""){
+    nomeUsuário = prompt("Qual o seu nome?");
 }
-inserirNome();
+if (nomeUsuário == null){
+    elemento.textContent = 'seja muito bem vindo.';
+}else{
+    elemento.textContent = nomeUsuário;
+}
+elemento.textContent = nomeUsuário;
 
 let linguagens = ["Javascript", "Python", "C"];
 console.log(linguagens [0]);
